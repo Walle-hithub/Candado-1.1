@@ -1,0 +1,20 @@
+name: ChestLock
+version: 1.0.0
+main: dev.chestlock.ChestLockPlugin
+api-version: '1.20'
+description: Candados, listas de confianza y ganzúas para cofres y puertas.
+commands:
+  chestlock:
+    description: Comando principal de ChestLock
+    aliases: [cl]
+    usage: /chestlock <give|manage|trust|untrust|info>
+permissions:
+  chestlock.use:
+    default: true
+    description: Permite colocar candados
+  chestlock.bypass:
+    default: op
+    description: Abre cualquier contenedor bloqueado sin minijuego
+  chestlock.admin:
+    default: op
+    description: Romper locks ajenos y usar /chestlock give
